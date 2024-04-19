@@ -3,11 +3,64 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+
+
+<%--<%--%>
+<%--    UserRepo userRepo = new UserRepo();--%>
+<%--    List<User> users = userRepo.findAll();--%>
+<%--%>--%>
+
+
+<nav class="navbar bg-body-tertiary bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light">First Project</a>
+        <a class="btn btn-outline-light w-50" href="">Search</a>
+        <div>
+            <a class="btn btn-outline-success" href="login.jsp">Login</a>
+        </div>
+    </div>
+</nav>
+<div class="p-4">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Group</th>
+            <th>Roles</th>
+            <th>#</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <%--            <div>--%>
+            <%--                <% for (User user : users) { %>--%>
+            <%--                <tr>--%>
+            <%--                    <% if (user.getRoles()) %>--%>
+            <%--                    <td><%= user.getFirstName() %>--%>
+            <%--                    </td>--%>
+            <%--                    <td><%= user.getLastName()%>--%>
+            <%--                    </td>--%>
+            <%--                    <td><%for (Role role : user.getRoles()) { %>--%>
+            <%--                        <%= role.getName() %>--%>
+            <%--                        <% } %>--%>
+            <%--                    </td>--%>
+            <%--                    <td>--%>
+            <%--                        <a href="editUser.jsp?id=<%=user.getId()%>" class="btn btn-outline-info">edit</a>--%>
+            <%--                        <a href="http://localhost:8080/user/delete?id=<%=user.getId()%>"--%>
+            <%--                           class="btn btn-outline-danger">delete</a>--%>
+            <%--                    </td>--%>
+            <%--                </tr>--%>
+            <%--                <% } %>--%>
+</div>
+</tbody>
+</table>
+</div>
+
 </body>
 </html>
